@@ -2,7 +2,28 @@
 var SiteMain = (function() {
 
 	function init(){
-		
+		playVideo();
+	}
+
+	function playVideo() {
+		var myPlayer = videojs('video-news');
+		if(myPlayer) {
+			$('.play-video').click(function(){
+				if (myPlayer.paused()) {
+			    $(this).find('.fa').removeClass('fa-play').addClass('fa-pause')
+					myPlayer.play();
+					if($(window).width() > 922) {
+						$('.video-custom-controls').hide();
+					}
+			  }
+			  else {
+			    $(this).find('.fa').removeClass('fa-pause').addClass('fa-play')
+					myPlayer.pause();
+					$('.video-custom-controls').show();
+			  }
+			})
+		}
+
 	}
 
 	function openPopup(idDiv){
@@ -21,6 +42,7 @@ var SiteMain = (function() {
 		init:init,
 		openPopup:openPopup,
 		closePopup:closePopup,
+		playVideo:playVideo
 	}
 
 })();

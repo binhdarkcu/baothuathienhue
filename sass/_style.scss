@@ -5,6 +5,8 @@ body {
 	font: $defaultFont; color: #5a5a5a;
 	background: #fff;
 	min-width: 1190px;
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
 	&.hidden {
 		overflow: hidden;
 	}
@@ -253,8 +255,14 @@ a{text-decoration: none;&:hover {
 .title22Bold {
 	@include RobotoBold(22px, 28px);
 }
+.title24Bold {
+	@include RobotoBold(24px);
+}
 .title25Bold {
 	@include RobotoBold(25px);
+}
+.title26Bold {
+	@include RobotoBold(26px);
 }
 .title28Bold {
 	@include RobotoBold(28px);
@@ -510,5 +518,3 @@ a{text-decoration: none;&:hover {
 	  @include objAbsoluteMiddle();
 	}
   }
-
-

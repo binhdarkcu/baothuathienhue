@@ -1,28 +1,22 @@
 $defaultFont: normal 14px/1.4 'Open Sans', sans-serif;
 
 @mixin RobotoLight( $value, $lineheight:1.1 ) {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: $value;
 	line-height: $lineheight;
 	font-weight: 300;
 }
 
 @mixin RobotoRegular( $value, $lineheight:1.1 ) {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: $value;
 	line-height: $lineheight;
 	font-weight: 400;
 }
 
-@mixin RobotoSemiBold( $value, $lineheight:1.1 ) {
-	font-family: 'Roboto', sans-serif;
-	font-size: $value;
-	line-height: $lineheight;
-	font-weight: 600;
-}
 
 @mixin RobotoBold( $value, $lineheight:1.1 ) {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: $value;
 	line-height: $lineheight;
 	font-weight: 700;
