@@ -57,6 +57,8 @@ $defaultFont: normal 14px/1.4 'Open Sans', sans-serif;
 }
 
 
+font-family: 'Space Mono', monospace;
+
 @mixin Transition($second, $optional: "") {
 	-webkit-transition: all $second $optional;
     -moz-transition: all $second $optional;

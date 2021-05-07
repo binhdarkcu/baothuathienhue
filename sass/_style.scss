@@ -14,6 +14,12 @@ html {
 		overflow: hidden;
 	}
 }
+a {
+    color: #202020;
+	&:hover {
+		color: #e60019;
+	}
+}
 .container {
 	max-width: 1170px!important;
 }
@@ -196,9 +202,12 @@ a{text-decoration: none;&:hover {
 .hasBrRight {
 	border-right: 1px solid #e2e2e2;
 }
-a {
-	color: #118AEF;
+
+.container-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
 }
+
 .center {
 	text-align: center;
 }
@@ -228,6 +237,9 @@ a {
 }
 .title18Bold {
 	@include RobotoBold(18px, 22px);
+}
+.title19Bold {
+	@include RobotoBold(19px, 22px);
 }
 .title20Bold {
 	@include RobotoBold(20px, 25px);
@@ -282,6 +294,10 @@ a {
 }
 .padding-left-20 {
 	padding-left: 20px;
+}
+.padding-top-15 {
+	padding-top: 15px;
+	display: inline-block;
 }
 .float-right-important {
 	float: right!important;
@@ -497,16 +513,3 @@ a {
   }
 
 
-.news-with-no-padding {
-	.row {
-		.col-6 {
-			padding-right: 0;
-		}
-		.col-3 {
-			padding-left: 0;
-		}
-		.col-3:nth-child(2) {
-			padding-right: 0;
-		}
-	}	
-}
