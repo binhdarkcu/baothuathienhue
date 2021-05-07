@@ -56,8 +56,19 @@ $defaultFont: normal 14px/1.4 'Open Sans', sans-serif;
 	font-weight: 700;
 }
 
+@mixin SpaceMonoRegular( $value, $lineheight:1.1 ) {
+	font-family: 'Space Mono', sans-serif;
+	font-size: $value;
+	line-height: $lineheight;
+	font-weight: 400;
+}
 
-font-family: 'Space Mono', monospace;
+@mixin SpaceMonoBold( $value, $lineheight:1.1 ) {
+	font-family: 'Space Mono', sans-serif;
+	font-size: $value;
+	line-height: $lineheight;
+	font-weight: 700;
+}
 
 @mixin Transition($second, $optional: "") {
 	-webkit-transition: all $second $optional;

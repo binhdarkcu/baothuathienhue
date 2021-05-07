@@ -17,6 +17,10 @@
         position: absolute;
         bottom: 0;
         left: 0;
+        @include SpaceMonoRegular(12px);
+        color: #4118da;
+        padding: 10px 25px;
+        background: #fff;
     }
     &.h288 {
         .middle {
@@ -27,3 +31,18 @@
     
 }
 
+.sub-list-news {
+    .sub-item {
+
+    }
+    ul {
+        li {
+            &.circle {
+
+            }
+            &.triangle {
+                
+            }
+        }
+    }
+}
