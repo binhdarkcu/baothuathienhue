@@ -83,7 +83,9 @@ a{text-decoration: none;&:hover {
 .no-padding-bottom {
 	padding-bottom: 0;
 }
-
+.no-absolute {
+	position: initial;
+}
 .margin-top-10 {
 	margin-top: 10px;
 }
@@ -100,6 +102,9 @@ a{text-decoration: none;&:hover {
 	margin-top: 20px!important;
 }
 .margin-top-35 {
+	margin-top: 35px!important;
+}
+.margin-top-40 {
 	margin-top: 35px!important;
 }
 .margin-bottom-18 {
