@@ -21,7 +21,6 @@
 }
 .sf-menu li {
 	float:			left;
-	position:		relative;
 }
 .sf-menu a {
 	display:		block;
@@ -30,11 +29,14 @@
 header .navigation ul.submenu  li a{
   line-height: 16px;
 }
+.navigation.navmenu {
+	position: relative;
+}
 
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
-	left:			0;
-	top:			37px; /* match top ul list item height */
+	left:			80px;
+	top:			62px; /* match top ul list item height */
 	z-index:		99;
 
 }
@@ -59,7 +61,7 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** DEMO SKIN ***/
 .sf-menu {
-	float:			left;
+	float: right;
 }
 .sf-menu a {
 	text-decoration:none;
@@ -68,8 +70,10 @@ ul.sf-menu li li li.sfHover ul {
 	color:			#FFFFFF;
 }
 header .navigation ul.submenu {
-  width: 250px;
+  width: calc(100% - 160px);
   display: block;
+  background: #fff;
+  border-radius: 0;
 }
 .sf-menu li li {
 	background:url(../img/bg_nav.png) repeat-x;
