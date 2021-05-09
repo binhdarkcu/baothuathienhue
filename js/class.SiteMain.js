@@ -3,6 +3,7 @@ var SiteMain = (function() {
 
 	function init(){
 		playVideo();
+		$('ul.sf-menu').superfish();
 	}
 
 	function playVideo() {
