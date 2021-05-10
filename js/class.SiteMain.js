@@ -27,6 +27,10 @@ var SiteMain = (function() {
 
 	}
 
+	function openGridMenu(idMenu) {
+		$(idMenu).toggleClass('opened');
+	}
+
 	function openPopup(idDiv){
 
 	}
@@ -43,7 +47,8 @@ var SiteMain = (function() {
 		init:init,
 		openPopup:openPopup,
 		closePopup:closePopup,
-		playVideo:playVideo
+		playVideo:playVideo,
+		openGridMenu:openGridMenu	
 	}
 
 })();
