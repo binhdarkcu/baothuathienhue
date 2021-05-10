@@ -8,12 +8,12 @@
 .sf-menu {
 	line-height:	1.0;
 }
-.sf-menu ul {
+.sf-menu ul, .sf-menu .submenu {
 	position:		absolute;
 	top:			-999em;
 	width:			10em; /* left offset of submenus need to match (see below) */
 }
-.sf-menu ul li {
+.sf-menu ul li, .sf-menu .submenu li {
 	width:			100%;
 }
 .sf-menu li:hover {
@@ -26,15 +26,15 @@
 	display:		block;
 	position:		relative;
 }
-header .navigation ul.submenu  li a{
+header .navigation .submenu  li a{
   line-height: 16px;
 }
 .navigation.navmenu {
 	position: relative;
 }
 
-.sf-menu li:hover ul,
-.sf-menu li.sfHover ul {
+.sf-menu li:hover ul, .sf-menu li:hover .submenu,
+.sf-menu li.sfHover ul, .sf-menu li.sfHover .submenu {
 	left:			80px;
 	top:			62px; /* match top ul list item height */
 	z-index:		99;
@@ -69,7 +69,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
 	color:			#FFFFFF;
 }
-header .navigation ul.submenu {
+header .navigation .submenu {
   width: calc(100% - 160px);
   display: block;
   background: #fff;
@@ -174,7 +174,7 @@ ul.submenu a
 header .navigation ul.submenu li {
   text-align: left;
 }
-ul.submenu a:hover
+.submenu a:hover
 {
 	color:red !important;
 }
@@ -190,4 +190,72 @@ ul.submenu li  li
 .subend
 {
 	position:absolute !important;right: -1px; left: auto!important;
+}
+.submenu .sf-menu-left {
+	width: 280px;
+	float: left;
+	margin-top: 35px;
+	padding-left: 40px;
+	&:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+.submenu .sf-menu-right {
+	width: calc(100% - 280px);
+	float: right;
+	padding-top: 38px;
+	.sf-menu-col {
+		float: left;
+		width: calc(25% - 40px);
+		margin-right: 40px;
+		.news-thumbnail {
+			margin-bottom: 10px;
+		}
+		a {
+			position: initial;
+			@include RobotoBold(16px);
+			color: #202020;
+			text-transform: initial;
+		}
+		
+	}
+}
+header {
+	.header-middle {
+		.navigation {
+			li {
+				&:hover  {
+					> a {
+						color: #fff02a;
+					}
+				}
+				
+				.submenu {
+					padding-bottom: 80px;
+					box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 20%);
+					ul {
+						position: relative;
+						top: 0;
+						left: 0;
+						li {
+							min-width: 166px;
+							border-top: 1px solid #9a9a9a;
+							padding: 8px 0;
+							min-height: initial;
+							&:last-child {
+								border-bottom: 1px solid #9a9a9a;
+							}
+							a {
+								@include OswaldRegular(13px);
+								color: #202020;
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

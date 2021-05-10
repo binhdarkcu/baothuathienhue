@@ -66,6 +66,13 @@ a{text-decoration: none;&:hover {
 	width: 90%;
 }
 
+.for-desktop {
+	display: block;
+}
+.for-mobile {
+	display: none;
+}
+
 .no-bg {
 	background: transparent!important;
 }
