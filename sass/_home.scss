@@ -86,6 +86,9 @@
                 color: #202020;
                 float: left;
                 width: calc(100% - 18px);
+				&:hover {
+					color: #cc0000;
+				}
             }
             &.circle {
                 &::before {
