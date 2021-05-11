@@ -1,0 +1,60 @@
+.main-banner{
+    min-height: 508px;
+    position: relative;
+    z-index: 1;
+    .relative-height {
+        min-height: 508px;
+        position: relative;
+        z-index: 2;
+    }
+    .news-on-banner {
+        min-height: 290px;
+        //position: absolute;
+        margin-top: 30px;
+        top: calc(100% - 296px);
+        left: 0;
+        border-top: 6px solid #ff6000;
+        width: calc(100% - 15px);
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: calc(var(--bs-gutter-x)/ 2);
+    }
+    .main-banner-background {
+        background: url(../images/bandoc-banner.jpg) no-repeat top center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 568px;
+        top: -60px;
+        z-index: 1;
+    }
+    .banner-title {
+        font-family: "UTM Niagara";
+        font-size: 107px;
+        line-height: 1;
+        margin-top: 75px;
+        text-align: center;
+        color: #e7fe4e;
+    }
+    .news-on-banner {
+        .banner-new-col {
+            width: 50%;
+            float: left;
+            .news-title {
+                margin-top: 15px;
+                color: #202020;
+            }
+        }
+    }
+}
+
+.body-024734 {
+    .video-content {
+        border-color: #024734;
+    }
+    header {
+        .header-middle {
+            background: #024734;
+        }
+    }
+}

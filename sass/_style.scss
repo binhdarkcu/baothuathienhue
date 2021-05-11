@@ -223,7 +223,10 @@ a{text-decoration: none;&:hover {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
+.relative {
+	position: relative;
+	z-index: 2;
+}
 .center {
 	text-align: center;
 }

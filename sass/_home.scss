@@ -26,6 +26,11 @@
 			padding-left: 0!important;
 		}
     }
+	&.h290 {
+        .middle {
+            padding-bottom: 290px;
+        }
+    }
     &.h288 {
         .middle {
             padding-bottom: 288px;
@@ -119,6 +124,11 @@
                     position: relative;
                     top: 4px;
                 }
+				&.green {
+					&::before {
+						background: url(../images/arrow-green.png) no-repeat;
+					}
+				}
                 a {
                     width: calc(100% - 19px);
                 }
@@ -215,9 +225,24 @@
 			}
 		}
 	}
+	.new-no-border{
+		.new-block-title {
+			min-height: 43px;
+		}
+		.new-block-list {
+			padding-top: 0;
+			
+		}
+	}
 	.new-block-border {
 		position: relative;
 		padding-right: 30px;
+		.new-block-title {
+			min-height: 43px;
+		}
+		.new-block-list {
+			padding-top: 0;
+		}
 		&:after {
 			content: "";
 			border-right: 1px solid #9a9a9a;
