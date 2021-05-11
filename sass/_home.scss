@@ -276,7 +276,8 @@
 	div {
 		display: inline-block;
 		border-bottom: 9px solid #cc0000;
-			line-height: 1.7;
+		line-height: 1.7;
+		
 	}
 	&.border5 {
 		div {
@@ -284,6 +285,11 @@
 		}
 		&:after {
 			bottom: 5px;
+		}
+	}
+	&.c-024734 {
+		div {
+			border-color: #024734;
 		}
 	}
 }
