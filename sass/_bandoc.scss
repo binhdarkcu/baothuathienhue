@@ -103,3 +103,38 @@
         }
     }
 }
+
+.new-papers-list {
+    .thumb-paper {
+        margin-bottom: 18px;
+        .middle {
+            padding-bottom: 249px;
+        }
+    }
+    .date {
+        margin-bottom: 25px;
+    }
+}
+
+.open-news-paper-by-date {
+    margin-top: 5px;
+    .input-group.date {
+        @include RobotoRegular(14px);
+        border: 1px solid #202020;
+        padding: 0 10px;
+        border-radius: 5px;
+        input[type="text"] {
+            border: none;
+            width: 105px;
+            height: 35px;
+            @include placeholdercolor(#202020);
+            outline: none;
+        }
+        i.fa {
+            font-size: 16px;
+            position: relative;
+            top: 10px;
+            margin-right: 5px;
+        }
+    }
+}

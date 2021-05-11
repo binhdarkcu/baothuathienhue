@@ -396,25 +396,26 @@ a{text-decoration: none;&:hover {
     margin: 10px auto;
 	ul {
 		li {
-			height: 27px;
+			height: 33px;
+			width: 34px;
 			display: inline-block;
-			border: 1px solid #e2e2e2;
+			border: 1px solid #d0d0d0;
 			@include BorderRadius(3px);
 			margin-left: 3px;
 			margin-right: 3px;
-			line-height: 27px;
+			line-height: 33px;
 			vertical-align: top;
 			&.current-page {
-				background: #118AEF;
+				background: #777777;
 				color: #fff;
-				@include RobotoBold(12px);
-				padding: 6px 9px;
+				@include RobotoBold(12px, 33px);
+				text-align: center;
+				display: inline-block;
 			}
 			 &:hover {
-				 background: #118AEF;
+				 background: #777777;
 
 				a {
-					padding: 5px 10px;
 					color: #fff;
 				}
 			 }
@@ -426,8 +427,10 @@ a{text-decoration: none;&:hover {
 			}
 
 			a{
-				@include RobotoRegular(12px);
-				padding: 5px 10px;
+				@include RobotoRegular(12px, 33px);
+				text-align: center;
+				display: block;
+				height: 33px;
 
 			}
 			&:hover {
@@ -535,3 +538,4 @@ a{text-decoration: none;&:hover {
 	  @include objAbsoluteMiddle();
 	}
   }
+
