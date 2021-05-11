@@ -138,3 +138,25 @@
         }
     }
 }
+
+.news-sidebar-right {
+    .news-sidebar-item {
+        margin-bottom: 25px;
+        a {
+            display: flex;
+            align-items: center;
+        }
+        .news-sidebar-img {
+            width: 165px;
+            height: 249px;
+            .middle {
+                padding-bottom: 249px;
+            }
+        }
+        p {
+            @include RobotoRegular(16px);
+            width: calc(100% - 190px);
+            margin-left: 15px;
+        }
+    }
+}
