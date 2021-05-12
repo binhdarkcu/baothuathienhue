@@ -342,9 +342,7 @@
     }
 
     .main-banner {
-        .banner-title {
-
-        }
+      
         .news-on-banner {
             width: calc(100% - 25px);
             .banner-new-col {
@@ -368,6 +366,13 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .new-papers-list {
+        margin-top: 50px;
+        .col-xs-6 {
+            width: 50%;
         }
     }
 }
