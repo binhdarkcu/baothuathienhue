@@ -36,12 +36,6 @@ a{text-decoration: none;&:hover {
 .for-mobile {
 	display: none;
 }
-.bg-border {
-	background: url("../images/icons/bg-border.png") repeat-x;
-	width: 100%;
-	height: 12px;
-	margin: 20px 0;
-}
 
 .fa{
 	color: #707070;
@@ -170,12 +164,6 @@ a{text-decoration: none;&:hover {
 
 .relative {
 	position: relative;
-}
-.del-link {
-	background: url(../images/home/delete.svg) no-repeat left center;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
 }
 
 .green {
@@ -373,7 +361,7 @@ a{text-decoration: none;&:hover {
 }
 
 .shadow-box {
-	box-shadow: 0 3px 6px 0 rgb(17 138 239 / 0.19);
+	box-shadow: 0 3px 6px 0 rgba(17, 138, 239, 0.19);
 	background-color: #ffffff;
 	@include BorderRadius(8px);
 	position: relative;
@@ -481,24 +469,6 @@ a{text-decoration: none;&:hover {
   .icon:hover {
 	border-color: #3e7086;
 	color: #3e7086;
-  }
-
-  .edit-icon {
-	  background: url(../images/home/edit.svg) no-repeat left center;
-    width: 16px;
-    display: inline-block;
-    height: 16px;
-	margin-top: 2px;
-    margin-right: 10px;
-  }
-  .delete-icon {
-	  background: url(../images/home/delete.svg) no-repeat left center;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-	margin-right: 10px;
-	position: relative;
-	top: 2px;
   }
 
   .note-editor {
