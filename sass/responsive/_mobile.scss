@@ -340,4 +340,34 @@
             }
         }
     }
+
+    .main-banner {
+        .banner-title {
+
+        }
+        .news-on-banner {
+            width: calc(100% - 25px);
+            .banner-new-col {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .news-list-common {
+        padding-left: 15px;
+        padding-right: 15px;
+        .news-common-item {
+            .news-left-item {
+                margin-bottom: 15px;
+            }
+            .news-left-item , .news-right-item{
+                width: 100%;
+            }
+            .news-right-item {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
