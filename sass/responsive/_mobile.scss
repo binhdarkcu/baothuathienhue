@@ -62,7 +62,7 @@
         margin-top: 55px;
     }
     header {
-        
+
         .header-middle {
             min-height: 55px;
             position: fixed;
@@ -100,7 +100,7 @@
                 }
             }
         }
-        
+
     }
     .sub-list-news {
         margin-top: 15px;
@@ -189,7 +189,7 @@
             .sub-list-news{
                 margin-top: 0;
                 &:after {
-                    display: none;   
+                    display: none;
                 }
             }
         }
@@ -211,13 +211,13 @@
             }
         }
     }
-    
+
 
     .container-wrapper {
         .sub-list-news{
             margin-top: 0;
             &:after {
-                display: none;   
+                display: none;
             }
         }
     }
@@ -239,10 +239,10 @@
             display: table;
             margin: 0 auto 35px;
         }
-        
+
     }
-    
-    
+
+
     .new-block-section .new-red-black-title.for-desktop{
         display: none;
     }
@@ -258,7 +258,7 @@
             .sub-list-news{
                 margin-top: 0;
                 &:after {
-                    display: none;   
+                    display: none;
                 }
             }
         }
@@ -289,7 +289,7 @@
                 margin: 0 auto;
                 width: 274px;
                 float: none!important;
-                
+
                 a {
                     margin-bottom: 0;
                     float: left;
@@ -304,7 +304,7 @@
                         }
                     }
                 }
-                
+
                 a {
                     span {
                         @include OswaldLight(15px);
@@ -342,7 +342,7 @@
     }
 
     .main-banner {
-      
+
         .news-on-banner {
             width: calc(100% - 25px);
             .banner-new-col {
@@ -393,7 +393,7 @@
                 float: left!important;
             }
         }
-        
+
         .news-list-common {
             padding-left: 0;
             padding-right: 0;
@@ -414,6 +414,13 @@
     .news-block-single {
         .single-block-center {
             width: 100%;
+        }
+    }
+
+    .news-block-single {
+        .news-title {
+            font-size: 35px;
+            text-align: left;
         }
     }
 }

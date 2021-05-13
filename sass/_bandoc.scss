@@ -139,7 +139,7 @@
             .description {
                 margin-top: 5px;
                 a {
-                
+
                 }
                 p {
                     @include RobotoRegular(14px, 1.3);
@@ -243,14 +243,15 @@
         .category-title {
             @include SpaceMonoRegular(19px);
             color: #ca1519;
-        } 
-        span.datetime {
+        }
+        .datetime {
             background: url(../images/clock.png) no-repeat;
             @include SpaceMonoRegular(15px);
             padding-left: 25px;
             color: #737373;
             padding-bottom: 3px;
             padding-top: 2px;
+            display: inline-block;
         }
     }
     .news-title {
@@ -285,4 +286,180 @@
             }
         }
     }
+}
+
+.related-news {
+
+}
+.other-events {
+    .hasBrLeft {
+        border-left: 5px solid #cc0000;
+        display: inline-block;
+        text-transform: uppercase;
+        @include RobotoBold(16px);
+        color: #000;
+        padding-left: 5px;
+    }
+    .other-text {
+        color: #8d8d8d;
+        @include RobotoBold(14px);
+    }
+
+    ul {
+        padding-left: 30px;
+        margin-top: 15px;
+        li {
+            padding-bottom: 10px;
+            list-style-type: disc;
+            a {
+                color: #373737;
+                @include RobotoRegular(16px);
+            }
+        }
+    }
+}
+.comment-respond {
+  background: #f4f4f4;
+}
+.comments {
+    border-top: 1px solid #909090;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+.comment-respond {
+  padding: 15px 13px;
+  textarea {
+      background: #fff;
+      border: solid 1px #dbdbdb;
+      @include BorderRadius(4px);
+      padding: 12px 15px;
+      height: 84px;
+      margin-bottom: 17px;
+      width: 100%;
+  }
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+.post-comments {
+  margin-top: 32px;
+  .comment-list {
+    margin-top: 21px;
+    li {
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .author-name {
+        @include RobotoBold(15px, 22px);
+        color: #1e1e1e;
+        margin-bottom: 3px;
+      }
+      .post-time {
+        color: #a1a1a1;
+        @include RobotoRegular(14px, 22px);
+        margin-right: 64px;
+        margin-left: 5px;
+      }
+      .author-avatar {
+          float: left;
+          position: relative;
+          top: 5px;
+          margin-right: 10px;
+      }
+      .author-content {
+        color: #1e1e1e;
+        @include RobotoRegular(16px, 22px);
+      }
+      .author-controls {
+        margin-top: 5px;
+        .answer-box {
+
+            float: right;
+            color: #8d8d8d;
+             @include RobotoRegular(14px, 22px);
+             .number-reply {
+                 margin-right: 5px;
+             }
+        }
+        a {
+          @include RobotoRegular(14px, 22px);
+          color: #1e1e1e;
+          margin-right: 24px;
+          .fa {
+              margin-right: 3px;
+          }
+        }
+      }
+    }
+    ul.children {
+        padding-left: 40px;
+        margin-top: 18px;
+    }
+  }
+  a.load-more {
+    color: #115daa;
+    @include RobotoRegular(15px, 22px);
+    display: table;
+    margin: 30px auto;
+    background: #f6f6f6;
+    padding: 13px 22px;
+  }
+}
+.key-words {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #8d8d8d;
+    @include RobotoRegular(16px);
+    b {
+        color: #000;
+    }
+}
+.socials-sharing {
+    margin-top: 13px;
+    a {
+        background: url(../images/like-and-share.png) no-repeat left center;
+        width: 110px;
+        display: inline-block;
+        height: 33px;
+        &.fb-share{
+            background-position: right center;
+        }
+    }
+}
+.like-share-box {
+    float: right;
+    width: 45px;
+    .item-like {
+        margin-bottom: 8px;
+        a {
+            padding-top: 42px;
+            min-width: 35px;
+            display: block;
+            @include RobotoRegular(14px);
+            color: #707970;
+            &.like-icon {
+                background: url(../images/like.png) no-repeat top center;
+            }
+            &.comment-icon {
+                background: url(../images/comment.png) no-repeat top center;
+            }
+            &.copy-icon {
+                background: url(../images/copy.png) no-repeat top center;
+            }
+            &.facebook-icon {
+                background: url(../images/facebook.png) no-repeat top center;
+            }
+            &.save-icon {
+                background: url(../images/save.png) no-repeat top center;
+            }
+        }
+    }
+
 }
