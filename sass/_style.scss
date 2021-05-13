@@ -4,7 +4,7 @@ html, body{ min-width: 320px; overflow: auto; overflow-x: hidden;}
 body {
 	font: $defaultFont; color: #5a5a5a;
 	background: #fff;
-	min-width: 1190px;
+	min-width: 1024px;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
 	&.hidden {

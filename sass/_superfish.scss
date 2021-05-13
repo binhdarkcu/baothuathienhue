@@ -61,7 +61,7 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** DEMO SKIN ***/
 .sf-menu {
-	float: right;
+
 }
 .sf-menu a {
 	text-decoration:none;
@@ -218,6 +218,7 @@ ul.submenu li  li
 			@include RobotoBold(16px);
 			color: #202020;
 			text-transform: initial;
+			white-space: normal;
 		}
 		
 	}
