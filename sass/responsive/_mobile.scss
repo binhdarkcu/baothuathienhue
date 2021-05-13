@@ -375,4 +375,39 @@
             width: 50%;
         }
     }
+
+    .news-block-single {
+        padding-top: 30px;
+        .category-title {
+            padding-top: 25px;
+        }
+        .news-datetime {
+            &:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            .datetime {
+                margin-top: 15px;
+                display: block;
+                float: left!important;
+            }
+        }
+        
+        .news-list-common {
+            padding-left: 0;
+            padding-right: 0;
+            .news-left-item {
+
+            }
+        }
+    }
+    .news-sidebar-right-block {
+        .new-block-section {
+            margin-top: 0;
+            .category-title {
+                padding-top: 0;
+            }
+        }
+    }
 }
