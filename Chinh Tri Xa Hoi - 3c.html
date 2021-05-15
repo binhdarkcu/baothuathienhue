@@ -183,24 +183,26 @@
                             <div class="datetime">09:42 1/4/2021 (GMT+7) </div>
                             <div class="short-description margin-top-15">
                                 <p>
-                                    <b>TTH.VN - Ngày 4/4, Đoàn thanh niên - Hội sinh viên Trường đại học (ĐH) Nghệ thuật, ĐH Huế đã phối hợp <br/>với Thị Đoàn Hương Trà tổ chức cuộc thi sáng tạo mỹ thuật với chủ đề: “Tuổi trẻ Thừa Thiên Huế với quê <br/>hương, đất nước và trường học xanh - sạch - sáng, 4 mùa hoa”.</b>
+                                    <b>TTH.VN - Ngày 4/4, Đoàn thanh niên - Hội sinh viên Trường đại học (ĐH) Nghệ thuật, ĐH Huế đã phối hợp với Thị Đoàn Hương Trà tổ chức cuộc thi sáng tạo mỹ thuật với chủ đề: “Tuổi trẻ Thừa Thiên Huế với quê hương, đất nước và trường học xanh - sạch - sáng, 4 mùa hoa”.</b>
                                 </p>
                             </div>
-                            <div class="like-share-box">
-                                <div class="item-like">
-                                    <a href="#" class="like-icon">1</a>
-                                </div>
-                                <div class="item-like">
-                                    <a href="#" class="comment-icon">0</a>
-                                </div>
-                                <div class="item-like">
-                                    <a href="#" class="copy-icon"></a>
-                                </div>
-                                <div class="item-like">
-                                    <a href="#" class="facebook-icon"></a>
-                                </div>
-                                <div class="item-like">
-                                    <a href="#" class="save-icon">Lưu</a>
+                            <div class="relative-sticky">
+                                <div class="like-share-box" id="sticky-fixed">
+                                    <div class="item-like">
+                                        <a href="#" class="like-icon"><b class="number">1</b></a>
+                                    </div>
+                                    <div class="item-like">
+                                        <a href="#" class="comment-icon"><b class="number">0</b></a>
+                                    </div>
+                                    <div class="item-like">
+                                        <a href="#" class="copy-icon"></a>
+                                    </div>
+                                    <div class="item-like">
+                                        <a href="#" class="facebook-icon"></a>
+                                    </div>
+                                    <div class="item-like">
+                                        <a href="#" class="save-icon"><b class="number">Lưu</b></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -486,6 +488,12 @@
             format: 'mm/dd/yyyy',
             startDate: '-3d'
         });
+        $(window).scroll(function () {
+			if($(window).width() > 992) {
+				var hOuter = $('header').outerHeight() + $('.news-datetime').outerHeight()
+				SiteMain.calcFixLeftAndRightSideBar(hOuter, '#sticky-fixed', 260)
+			}
+		});
     })
 </script>
 </body>

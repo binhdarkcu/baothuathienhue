@@ -391,6 +391,7 @@
                 margin-top: 15px;
                 display: block;
                 float: left!important;
+                display: inline-block;
             }
         }
 
@@ -421,6 +422,31 @@
         .news-title {
             font-size: 35px;
             text-align: left;
+        }
+    }
+
+    .col-custom-left-single {
+        width: 100%;
+        padding-right: 15px;
+    }
+    .col-custom-right-single {
+        width: 100%;
+    }
+    .relative-sticky{
+        display: none;
+    }
+    .main-content-body {
+
+        .content-detail-body {
+            float: left;
+            width: 100%;
+        }
+    }
+    .timeline-single {
+        .news-datetime {
+            .datetime  {
+                margin-top: 0;
+            }
         }
     }
 }

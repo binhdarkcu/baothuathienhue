@@ -343,6 +343,10 @@ a{text-decoration: none;&:hover {
 	@include BorderRadius(5px);
 }
 
+.black {
+	color: #010101!important;
+}
+
 .main-content {
 	margin-top: 50px;
 	width: 100%;
@@ -508,4 +512,3 @@ a{text-decoration: none;&:hover {
 	  @include objAbsoluteMiddle();
 	}
   }
-
