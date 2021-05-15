@@ -449,4 +449,50 @@
             }
         }
     }
+    .post-comments {
+        .comment-list {
+            li {
+                .post-time {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .video-embed {
+        iframe {
+            height: 350px;
+        }
+    }
+    .short-description-tin-anh {
+        width: 100%;
+    }
+    .search-on-top {
+        margin-top: 65px;
+    }
+    .search-on-top .search-input.w980 {
+        width: 100%;
+        .txt-search {
+            width: 100%;
+            padding-right: 300px;
+        }
+    }
+}
+@media screen and (min-width: 0) and (max-width: 640px) {
+    .search-on-top {
+        margin-top: 65px;
+        .search-input.w980 {
+            width: 100%;
+            .txt-search {
+                width: 88%;
+                padding-right: 45px;
+            }
+        }
+
+        .search-by-cate {
+            position: relative;
+            top: 0;
+            right: 0;
+            float: right;
+        }
+    }
 }

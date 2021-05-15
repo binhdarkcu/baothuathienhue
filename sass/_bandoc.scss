@@ -86,6 +86,167 @@
     }
 }
 
+.short-description-tin-anh{
+	width: 730px;
+	margin: 0 auto;
+}
+
+.cls-image-wrapper{
+	margin-bottom: 20px;
+}
+
+.search-on-top {
+    background-color: #f4f4f4;
+    padding: 16px 0;
+    .search-input {
+        position: relative;
+        .cleartext {
+            position: absolute;
+            background-image: url(../images/16.png);
+            display: block;
+            background-repeat: no-repeat;
+            background-position: -1px -705px;
+            width: 14px;
+            height: 14px;
+            display: block;
+            right: 23px;
+            top: 15px;
+            cursor: pointer;
+        }
+        &.w980 {
+            width: 980px;
+        }
+        .btn-search {
+            position: absolute;
+            background-image: url(../images/16.png);
+            display: block;
+            background-repeat: no-repeat;
+            background-position: 0 -672px;
+            width: 16px;
+            height: 16px;
+            display: block;
+            right: 70px;
+            top: 15px;
+            cursor: pointer;
+        }
+    }
+    .txt-search {
+        width: 914px;
+        float: left;
+        height: 44px;
+        border-radius: 2px;
+        border: none;
+        padding-left: 16px;
+    }
+    .search-by-cate {
+        position: absolute;
+        width: 280px;
+        height: 44px;
+        right: 105px;
+        top: 0;
+        .text-first {
+            color: #222;
+            @include RobotoRegular(14px);
+            width: 240px;
+            padding: 14px 20px;
+            text-align: right;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            &:after {
+                top: 50%;
+                border: solid transparent;
+                border-width: .4em .35em 0;
+                border-top-color: #222;
+                margin: -.125em .5em 0 0;
+                content: '';
+                display: block;
+                width: 1px;
+                position: absolute;
+                right: -3px;
+            }
+        }
+        .box-cate {
+            display: none;
+            &.active {
+                display: block;
+
+            }
+            .cate-text {
+                color: #222;
+                @include RobotoRegular(14px);
+                border: none;
+                width: 240px;
+                padding: 14px 20px;
+                border-bottom: 1px solid #cfcfcf;
+                background-color: #fbfbfb;
+                position: relative;
+                z-index: 100;
+                cursor: pointer;
+                display: block;
+                text-align: right;
+                transition: all 2s;
+                -webkit-transition: all 2s;
+                &.active, &:hover{
+                    background-color: #feebe9;
+                }
+            }
+        }
+    }
+}
+
+.search-result {
+    .news-list-common {
+        margin-top: 25px;
+    }
+}
+
+.filter-block {
+    margin-top: 12px;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 5px;
+    .search-type-title {
+        margin-right: 24px;
+        float: left;
+        color: #333;
+        @include RobotoRegular(14px);
+    }
+    .filter {
+        padding-bottom: 5px;
+        margin-right: 24px;
+            color: #333;
+            @include RobotoRegular(14px);
+        &.active, &:hover {
+            color: #e32;
+            border-bottom: 2px solid #e32;
+            font-weight: 700;
+        }
+    }
+}
+
+.slick-galleries {
+    position: relative;
+    width: 920px;
+    overflow: hidden;
+    .slick-item {
+        float: left;
+        width: 920px;
+        background: #fff;
+        p {
+            color: #000;
+            @include RobotoRegular(14px, 1.4);
+            padding-top: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        img {
+            width: 100%;
+            height: calc(100vh - 100px);
+        }
+    }
+}
+
 .new-block-paper {
     .adv-box {
         img {
