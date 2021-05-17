@@ -496,6 +496,19 @@
 
         }
     }
+    .news-block-single {
+        .single-block-center {
+            .news-list-common.w720 {
+                width: 100%;
+            }
+            .short-description {
+                width: 100%;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 0) and (max-width: 640px) {
     .common-modal {
@@ -538,4 +551,14 @@
             float: right;
         }
     }
+    .news-block-single {
+        .news-datetime{
+            .news-title {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    
 }
