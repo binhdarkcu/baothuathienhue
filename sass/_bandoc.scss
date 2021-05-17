@@ -1,3 +1,6 @@
+.c-ff6c00 {
+    color: #ff6c00!important;
+}
 .main-banner{
     min-height: 508px;
     position: relative;
@@ -18,6 +21,9 @@
         padding-left: 0;
         padding-right: 0;
         margin-left: calc(var(--bs-gutter-x)/ 2);
+        &.video-content {
+            background: #fff;
+        }
     }
     .main-banner-background {
         background: url(../images/bandoc-banner.jpg) no-repeat top center;
@@ -45,6 +51,9 @@
             float: left;
             &.w70 {
                 width: 70%;
+                .video-js{
+                    width: 100%;
+                }
                 .news-thumbnail {
                     &.h404 {
                         .middle {
@@ -247,6 +256,8 @@
     }
 }
 
+
+
 .new-block-paper {
     .adv-box {
         img {
@@ -277,6 +288,10 @@
         border-bottom: 1px solid #9a9a9a;
         padding-bottom: 22px;
         margin-top: 22px;
+        &.has-br-top {
+            border-top: 1px solid #9a9a9a;
+            padding-top: 22px;
+        }
         &:last-child {
             border-bottom: 1px solid #9a9a9a;
         }
