@@ -6,6 +6,7 @@
 }
 .slick-galleries {
     height: calc(100vh - 40px);
+    max-height: 680px;
     .slick-arrow {
         background: url(../images/arrow-left.png) no-repeat;
         width: 35px;

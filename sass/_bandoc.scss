@@ -238,6 +238,7 @@
     position: relative;
     width: 920px;
     overflow: hidden;
+    
     .slick-item {
         float: left;
         width: 920px;
@@ -252,6 +253,7 @@
         img {
             width: 100%;
             height: calc(100vh - 100px);
+            max-height: 625px;
         }
     }
 }
