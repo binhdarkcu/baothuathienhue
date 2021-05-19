@@ -8,7 +8,14 @@ var SiteMain = (function() {
 		}
 
 		$('ul.sf-menu').superfish();
+		openMobileMenu()
+	}
 
+	function openMobileMenu() {
+		$('.hamburger-menu').click(function() {
+			$(this).toggleClass('actived')
+			$('.navigation-right').toggleClass('actived')
+		})
 	}
 
 
