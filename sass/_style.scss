@@ -224,6 +224,18 @@ a{text-decoration: none;&:hover {
 .center {
 	text-align: center;
 }
+
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+
+	& > [class^="col-"],
+	& > [class*=" col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
 .title19Bold {
 	@include RobotoBold(19px, 24px);
 }

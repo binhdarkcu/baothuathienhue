@@ -39,6 +39,14 @@
       }
     }
   }
+
+  .long-form-news-item {
+    .news-thumbnail.h580 {
+      .middle {
+        padding-bottom: 480px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1273px) {
@@ -78,4 +86,11 @@
         }
       }
     }
+  .long-form-news-item {
+    .news-thumbnail.h580 {
+      .middle {
+        padding-bottom: 480px;
+      }
+    }
+  }
 }
