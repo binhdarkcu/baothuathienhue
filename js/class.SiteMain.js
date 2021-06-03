@@ -12,7 +12,7 @@ var SiteMain = (function() {
 	}
 
 	function openMobileMenu() {
-		$('.hamburger-menu').click(function() {
+		$('.navigation-top-mobile .hamburger-menu').click(function() {
 			$(this).toggleClass('actived')
 			$('.navigation-right').toggleClass('actived')
 		})
