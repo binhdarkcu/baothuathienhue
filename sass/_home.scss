@@ -1,10 +1,11 @@
 .news-with-no-padding {
 	.row {
 		.col-6 {
-			padding-right: 0;
+			padding-right: 2px;
 		}
 		.col-3 {
-			padding-left: 0;
+			padding-left: 2px;
+			padding-right: 0;
 		}
 		.col-3:nth-child(2) {
 			padding-right: 0;
