@@ -130,6 +130,11 @@
 						background: url(../images/arrow-green.png) no-repeat;
 					}
 				}
+				&.blue {
+					&::before {
+						background: url(../images/arrow-blue.png) no-repeat;
+					}
+				}
                 a {
                     width: calc(100% - 19px);
                 }
